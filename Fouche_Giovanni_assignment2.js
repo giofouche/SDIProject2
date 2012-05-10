@@ -57,3 +57,10 @@ return;};
 testAllcars();
 
 
+// String Function
+
+var features = function() {
+    console.log("I think i'm going to go with the soul. It has", feature1," enough" ,feature2 , "and a",feature3 , "." );
+}
+
+features();
