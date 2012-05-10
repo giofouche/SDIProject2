@@ -33,3 +33,27 @@ var financing = function () {
 
 financing()
 
+//Array Function
+var carNames = ["Soul", "Cube"];
+	zeroTo60 = ["7", "9"];
+var testcar = function (carsLeft){
+	 var carName = carNames[carsLeft],
+            carTime = zeroTo60[carsLeft];
+	
+	console.log("They say the zero to 60 time in the " + carName + " is " + carTime + " seconds. Im going to test it.");
+	
+for (var time = 0; time < carTime; time += 1){
+	var  timeLeft = carTime - time;
+	console.log (time + " seconds have gone by " + timeLeft + " seconds left.");
+}	
+console.log("The " + carName + " was right on time.")	
+};
+
+var testAllcars = function (){
+	for (var carsLeft = 0; carsLeft < carNames.length; carsLeft++){
+            testcar(carsLeft);
+	}
+return;};
+testAllcars();
+
+
